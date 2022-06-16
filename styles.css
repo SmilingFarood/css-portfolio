@@ -314,6 +314,10 @@ span {
 
 /* Portfolios */
 
+.section-portfolio {
+    position: relative;
+}
+
 .portfolios {
     display: grid;
     height: 90vh;
@@ -392,6 +396,135 @@ span {
     color: var(--color-secondary);
 }
 
+.overlay {
+    position: absolute;
+    left: 15%;
+    z-index: -1;
+    top: 16.3rem;
+    opacity: .1;
+
+}
+
+.overlay img {
+    width: 200px;
+}
+
+
+/* Services */
+.services-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 2rem;
+    padding-top: 3rem;
+}
+
+.service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .s-image {
+    padding: 1rem;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #F7F7F7;
+    transition: var(--trans);
+    border-radius: 10px;
+}
+
+.service i {
+    font-size: 4rem;
+    margin: 1rem;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #16194F86;
+    transition: var(--trans);
+}
+
+.service .s-image:hover {
+    border: 3px dashed var(--color-primary);
+}
+
+.service .s-image:hover i {
+    color: #16194F;
+}
+
+.service h4 {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--color-primary);
+
+}
+
+.service p {
+    padding-top: .4rem;
+}
+
+
+/* Contact Section */
+
+.section-contact {
+    background-color: var(--color-neutral-1);
+    position: relative;
+}
+
+.section-contact .navigation {
+    padding: initial;
+
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h4 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.email {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email i {
+    margin: 0 1rem;
+    font-size: 3rem;
+    opacity: 0.8;
+    color: var(--color-secondary);
+}
+
+.email p {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.section-contact .nav-item {
+    margin: 0 1rem;
+}
+
+/* Footer */
+footer{
+    padding: 2rem 18rem;
+}
+
+footer p{
+    text-align: center;
+    color: var(--color-primary);
+}
+
+footer span{
+    cursor: pointer;
+}
 
 /* Utilities */
 .u-pad-3 {
